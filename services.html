@@ -25,16 +25,16 @@
     }
   </style>
 </head>
-<body class="text-gray-100 font-sans">
+<body class="text-gray-100 font-sans overflow-x-hidden">
 
   <!-- HEADER FIXE -->
   <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md text-white shadow-lg z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <img src="IMG-20250708-WA0015.jpg" alt="Logo Polygraphie Pro" class="h-12 md:h-14 rounded shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-3 sm:p-4">
+      <img src="IMG-20250708-WA0015.jpg" alt="Logo Polygraphie Pro" class="h-10 sm:h-12 md:h-14 rounded shadow-md">
 
       <!-- NAVIGATION -->
-      <nav class="hidden md:block">
-        <ul class="flex space-x-4 md:space-x-6 font-medium text-base md:text-lg">
+      <nav class=" md:block">
+        <ul class="flex flex-wrap gap-3 md:gap-6 font-medium text-sm sm:text-base md:text-lg">
           <li><a href="index.html" class="hover:text-yellow-400 transition">Accueil</a></li>
           <li><a href="services.html" class="hover:text-yellow-400 transition">Services</a></li>
           <li><a href="realisation.html" class="hover:text-yellow-400 transition">Réalisations</a></li>
@@ -45,94 +45,89 @@
     </div>
   </header>
 
-  <!-- ESPACE POUR LE HEADER FIXE -->
-  <div class="h-20 md:h-24"></div>
+  <!-- ESPACE POUR HEADER FIXE -->
+  <div class="h-16 sm:h-20 md:h-24"></div>
 
   <!-- HERO SECTION -->
-  <section class="text-center py-10 px-4 fade-in">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-wide">
+  <section class="text-center py-8 sm:py-10 px-4 fade-in">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-lg tracking-wide leading-snug break-words">
        Nos <span class="text-yellow-400">Services</span>
     </h1>
-    <p class="mt-4 text-lg sm:text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-      Des solutions graphiques modernes et sur mesure <br> pour booster votre image et votre communication.
+    <p class="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-gray-200 max-w-[90%] sm:max-w-2xl mx-auto leading-relaxed">
+      Des solutions graphiques modernes et sur mesure pour booster votre image et votre communication.
     </p>
   </section>
 
   <!-- SECTION SERVICES -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 fade-in">
+  <main class="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 fade-in">
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="WhatsApp Image 2025-06-28 at 13.47.49.jpeg" alt="Création de logo" class="max-h-full max-w-full object-contain">
+    <!-- Modèle générique de carte -->
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="WhatsApp Image 2025-06-28 at 13.47.49.jpeg" alt="Création de logo" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Création de logos</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Création de logos</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Des identités visuelles uniques et mémorables pour renforcer votre marque.
         </p>
       </div>
     </div>
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="WhatsApp Image 2025-06-28 at 13.47.45(1).jpeg" alt="Impression" class="max-h-full max-w-full object-contain">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="WhatsApp Image 2025-06-28 at 13.47.45(1).jpeg" alt="Impression" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Impression numérique</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Impression numérique</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Des impressions haute qualité pour vos flyers, affiches, cartes et supports promotionnels.
         </p>
       </div>
     </div>
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="WhatsApp Image 2025-06-28 at 13.47.46.jpeg" alt="Flyers" class="max-h-full max-w-full object-contain">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="WhatsApp Image 2025-06-28 at 13.47.46.jpeg" alt="Flyers" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Supports publicitaires</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Supports publicitaires</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Création d’affiches, flyers et cartes de visite au design moderne et impactant.
         </p>
       </div>
     </div>
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="IMG-20250714-WA0069.jpg" alt="Application" class="max-h-full max-w-full object-contain">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="IMG-20250714-WA0069.jpg" alt="Application" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Sites & Applications</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Sites & Applications</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Développement de sites web et d’applications modernes, rapides et sécurisés.
         </p>
       </div>
     </div>
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="IMG-20250714-WA0070.jpg" alt="Services numériques" class="max-h-full max-w-full object-contain">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="IMG-20250714-WA0070.jpg" alt="Services numériques" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Services numériques</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Services numériques</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Une gamme complète de solutions digitales pour accompagner votre entreprise.
         </p>
       </div>
     </div>
 
-    <!-- Service -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/20 hover:scale-105 hover:shadow-2xl transition duration-300">
-      <div class="w-full h-56 sm:h-64 md:h-72 bg-black flex items-center justify-center">
-        <img src="WhatsApp Image 2025-06-28 at 13.47.50.jpeg" alt="Créations personnalisées" class="max-h-full max-w-full object-contain">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-white/20 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+      <div class="w-full aspect-[4/3] bg-black flex items-center justify-center overflow-hidden">
+        <img src="WhatsApp Image 2025-06-28 at 13.47.50.jpeg" alt="Créations personnalisées" class="w-full h-full object-contain">
       </div>
-      <div class="p-6">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">Créations personnalisées</h2>
+      <div class="p-4 sm:p-5">
+        <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight break-words">Créations personnalisées</h2>
         <p class="text-gray-200 mt-2 text-sm sm:text-base leading-relaxed">
           Des designs sur-mesure qui s’adaptent à vos besoins et à votre style.
         </p>
@@ -142,24 +137,26 @@
   </main>
 
   <!-- CTA FINAL -->
-  <section class="text-center py-10 px-4 fade-in">
-    <h2 class="text-3xl sm:text-4xl font-bold text-white drop-shadow-md">Un projet en tête ?</h2>
-    <p class="mt-4 text-base sm:text-lg text-gray-200 max-w-xl mx-auto">
+  <section class="text-center py-8 sm:py-10 px-4 fade-in">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md leading-snug break-words">
+      Un projet en tête ?
+    </h2>
+    <p class="mt-3 text-sm sm:text-base md:text-lg text-gray-200 max-w-xl mx-auto">
       Discutons ensemble pour donner vie à vos idées et propulser votre communication visuelle.
     </p>
-    <a href="contact.html" class="inline-block mt-6 bg-yellow-400 text-gray-900 font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:bg-yellow-300 transition">
+    <a href="contact.html" class="inline-block mt-5 bg-yellow-400 text-gray-900 font-bold px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-lg shadow-lg hover:bg-yellow-300 transition">
       📩 Contactez-nous
     </a>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white mt-16">
-    <div class="max-w-4xl mx-auto text-center py-8 px-4 space-y-4">
-      <p class="text-sm">&copy; 2025 <span class="font-semibold">Polygraphie Pro</span>. Tous droits réservés.</p>
+  <footer class="bg-gray-900 text-white mt-12">
+    <div class="max-w-4xl mx-auto text-center py-6 px-4 space-y-3">
+      <p class="text-xs sm:text-sm">&copy; 2025 <span class="font-semibold">Polygraphie Pro</span>. Tous droits réservés.</p>
       
-      <div class="border-t border-gray-700 pt-4">
+      <div class="border-t border-gray-700 pt-3">
         <p class="text-xs sm:text-sm text-gray-400">Site conçu et développé par :</p>
-        <p class="text-base sm:text-lg font-semibold mt-1">Moussa Doumbouya</p>
+        <p class="text-sm sm:text-base font-semibold mt-1">Moussa Doumbouya</p>
         <p class="text-xs sm:text-sm">
           📧 
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=doumbouya30808@gmail.com" 
@@ -169,7 +166,7 @@
           </a>
         </p>
       </div>
-      <p class="text-xs text-gray-500 mt-3">
+      <p class="text-[10px] sm:text-xs text-gray-500 mt-2">
         Ce site est protégé par les lois sur la propriété intellectuelle. Toute reproduction est interdite sans autorisation.
       </p>
     </div>

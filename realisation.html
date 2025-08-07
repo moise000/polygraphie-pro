@@ -88,23 +88,27 @@
     </div>
 
 
-    <script>
-      const menuBtn = document.getElementById('menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const links = document.querySelectorAll('.nav-link');
+ <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const links = document.querySelectorAll('.nav-link');
 
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+  // Ouvre/ferme le menu mobile
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 
-      const currentPage = window.location.pathname.split("/").pop(); // Ex: "about.html"
-      links.forEach(link => {
-        const linkPage = link.getAttribute("href");
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        }
-      });
-    </script>
+  // Détection automatique du lien actif
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
   </header>
 
 <div class="h-16 sm:h-20 md:h-24"></div>

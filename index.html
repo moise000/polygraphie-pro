@@ -64,25 +64,27 @@
         <li><a href="contact.html" class="block nav-link">Contact</a></li>
       </ul>
     </div>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const links = document.querySelectorAll('.nav-link');
 
 
-    <script>
-      const menuBtn = document.getElementById('menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const links = document.querySelectorAll('.nav-link');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
 
-      const currentPage = window.location.pathname.split("/").pop(); // Ex: "about.html"
-      links.forEach(link => {
-        const linkPage = link.getAttribute("href");
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        }
-      });
-    </script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
   </header>
 
   <div class="h-20 md:h-24"></div>
